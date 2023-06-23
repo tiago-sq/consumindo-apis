@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+form > * {
+  border: 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 5px; 
+  padding: 10px;
+}
+
+header {
+  background-color: #0D80BF;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.city-card {
+  align-items: center;
+  background-color: #0D80BF;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.city-card:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+@media all and (min-width: 640px) {
+  form {
+    flex-flow: row;
+  }
+
+  .city-card {
+    font-size: 1.5rem;
+    width: 300px;
+    height: 150px;
+  }
+}
